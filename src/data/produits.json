@@ -1,0 +1,33 @@
+[
+    {
+        "nom": "Chandail à manche longue",
+        "prix": 19.69,
+        "id": "prd0001"
+    },
+    {
+        "nom": "T-shirt à col roulé",
+        "prix": 19.69,
+        "id": "prd0002"
+    },
+    {
+        "nom": "T-shirt à col V",
+        "prix": 19.69,
+        "id": "prd0003"
+    },
+    {
+        "nom": "T-shirt orange",
+        "prix": 19.69,
+        "id": "prd0004"
+    },
+    {
+        "nom": "T-shirt masculin",
+        "prix": 19.69,
+        "id": "prd0005"
+    },
+    {
+        "nom": "Chandail",
+        "prix": 19.69,
+        "id": "prd0006"
+    }
+
+]
