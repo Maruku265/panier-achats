@@ -1,11 +1,11 @@
-import './Entete.css';
+import './Entete.scss';
 
 function Entete(props) {
 
     return (
         <header className="Entete">
-            <div className="logo"></div>
-            <ul>
+            <div className="logo">Magasin</div>
+            <ul className="navPrincipale">
                 <li>Produits</li>
                 <li>À propos de nous</li>
                 <li>Contactez-nous</li>
