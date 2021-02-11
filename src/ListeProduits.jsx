@@ -13,7 +13,7 @@ export default function ListeProduits(props) {
             {/* On va générer les produits à partir de la stucture obtenue du fichier JSON des produits */}
 
             {tabProduits.map(prd => 
-                <Produit key={prd.id} nom={prd.nom} prix={prd.prix} id={prd.id}/>
+                <Produit etatPanier={props.etatPanier} nom={prd.nom} prix={prd.prix} id={prd.id}/>
             )}
             </ul>
         </div>
