@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/panier-achats/static/css/main.45c19b12.chunk.css",
+    "main.js": "/panier-achats/static/js/main.dfcbe3c2.chunk.js",
+    "main.js.map": "/panier-achats/static/js/main.dfcbe3c2.chunk.js.map",
+    "runtime-main.js": "/panier-achats/static/js/runtime-main.a339d65f.js",
+    "runtime-main.js.map": "/panier-achats/static/js/runtime-main.a339d65f.js.map",
+    "static/js/2.bbc7de46.chunk.js": "/panier-achats/static/js/2.bbc7de46.chunk.js",
+    "static/js/2.bbc7de46.chunk.js.map": "/panier-achats/static/js/2.bbc7de46.chunk.js.map",
+    "index.html": "/panier-achats/index.html",
+    "static/css/main.45c19b12.chunk.css.map": "/panier-achats/static/css/main.45c19b12.chunk.css.map",
+    "static/js/2.bbc7de46.chunk.js.LICENSE.txt": "/panier-achats/static/js/2.bbc7de46.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a339d65f.js",
+    "static/js/2.bbc7de46.chunk.js",
+    "static/css/main.45c19b12.chunk.css",
+    "static/js/main.dfcbe3c2.chunk.js"
+  ]
+}
