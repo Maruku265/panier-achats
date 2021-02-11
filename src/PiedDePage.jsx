@@ -3,7 +3,7 @@ import './PiedDePage.scss';
 export default function PiedDePage(props) {
     const annee = new Date().getFullYear();
     return (
-        <footer>
+        <footer className="PiedDePage">
             &copy;{annee} - TIM - Tous droitsréservés.
         </footer>
     );
