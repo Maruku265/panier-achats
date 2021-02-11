@@ -3,6 +3,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import Badge from '@material-ui/core/Badge';
 
 function Entete(props) {
+    const [panier, setPanier] = props.etatPanier;
 
     return (
         <header className="Entete">
