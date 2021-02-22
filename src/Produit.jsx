@@ -1,29 +1,37 @@
 import BtnAjoutPanier from './BtnAjoutPanier'
 import './Produit.scss';
+import AddShoppingCart from '@material-ui/icons/AddShoppingCart';
 
-export default function Produit(props) {
-    const [panier, setPanier] = props.etatPanier;
-
-    const {nom, prix, id} = props;
+export default function Produit({nom, prix, id, etatPanier}) {
+    const [panier, setPanier] = etatPanier;
 
     function ajouterPanier() {
         if (panier[id]) {
             panier[id].qte++;
         }
         else {
-            panier[id] = {prix: prix, qte: 1}
+            panier[id] = {nom: nom, prix: prix, qte: 1}
         }
         setPanier(JSON.parse(JSON.stringify(panier))); //{...panier}
     }
 
+    let qte = 0;
+    let texte = "Ajouter au panier";
+    let classeCss = "";
+    if (panier[id]) {
+        qte = panier[id].qte;
+        texte = <AddShoppingCart />; // JSX = Javascript Syntax eXtension
+        classeCss = "rouge";
+    }
+
     return (
         <li className="Produit">
-            <img src={'images-produits/' + props.id + '.jpg'} alt=""/>
+            <img src={'images-produits/' + id + '.jpg'} alt=""/>
             <div className="info">
-                <p className="nom">{props.nom}</p>
-                <p className="prix">{props.prix}</p>
+                <p className="nom">{nom}</p>
+                <p className="prix">{prix}</p>
             </div>
-            <BtnAjoutPanier onClick={ajouterPanier} />
+            <BtnAjoutPanier onClick={ajouterPanier} qte={qte} texte={texte} classeCss={classeCss} />
         </li>
     );
 }
